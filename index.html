@@ -2,244 +2,354 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="./pics/logom.png" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    />
+    <link rel="icon" type="image/svg+xml" href="./pics/Logo.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>seiDris | Developer</title>
   </head>
   <body>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-    </nav>
-
-    <header id="about">
-      <h1>Hii<i class="far fa-smile-beam"></i></h1>
-
-      <p>My name is SeiD iDriS</p>
-
-      <p>And this is my portfolio, I hope you like it.</p>
-
-      <ul class="boxy">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </header>
-
-    <!---------------------my project------------>
-
-    <section id="projects" class="codes">
-      <h1>My Projects</h1>
-
-      <div class="project-container">
-        <a
-          rel="noopener"
-          aria-label="new"
-          href="https://codepen.io/Se-iDris/pen/RwGwMWO"
-          target="_blank"
-          class="links"
-        >
-          <img src="pics/one.png" alt="one" class="pics" />
-          <p>Survey Form</p>
-        </a>
-
-        <a
-          rel="noopener"
-          aria-label="new"
-          href="https://codepen.io/Se-iDris/pen/eYVXOYX"
-          target="_blank"
-          class="links"
-        >
-          <img src="pics/two.png" alt="Two" class="pics" />
-          <p>Product Landing Page</p>
-        </a>
-
-        <a
-          rel="noopener"
-          aria-label="new"
-          href="https://codepen.io/lazywinner/pen/wvzWwZe"
-          target="_blank"
-          class="links"
-        >
-          <img src="pics/three.png" alt="Three" class="pics" />
-          <p>Technical Documentation Page</p>
-        </a>
-
-        <a
-          rel="noopener"
-          aria-label="new"
-          href="https://codepen.io/lazywinner/details/zYKdpQJ"
-          target="_blank"
-          class="links"
-        >
-          <img src="pics/four.png" alt="Four" class="pics" />
-          <p>Portfolio Webpage</p>
-        </a>
-
-        <a
-          rel="noopener"
-          aria-label="new"
-          href="https://codepen.io/Se-iDris/pen/XWZOvgP"
-          target="_blank"
-          class="links"
-        >
-          <img src="pics/five.png" alt="Five" class="pics" />
-          <p>Calculator</p>
-        </a>
-
-        <a
-          rel="noopener"
-          aria-label="new"
-          href="https://codepen.io/lazywinner/pen/KKgPdxR"
-          target="_blank"
-          class="links"
-        >
-          <img src="pics/six.png" alt="Six" class="pics" />
-          <p>Tribute Page</p>
-        </a>
+    <div id="viewport">
+      <div data-barba="container" data-barba-namespace="home">
+        <header id="header" class="header">
+          <div class="wrapper">
+            <nav class="nav">
+              <a href="/" class="nav__logo header__item">seiDris</a>
+              <div class="nav__links">
+                <a
+                  href="#about"
+                  class="nav__link js--nav-link header__item text-link"
+                  >About</a
+                ><a
+                  href="#work"
+                  class="nav__link js--nav-link header__item text-link"
+                  >Work</a
+                ><a
+                  href="#process"
+                  class="nav__link js--nav-link header__item text-link"
+                  >Process</a
+                >
+                <a href="" class="nav__link header__item text-link"
+                  >Contact Us</a
+                >
+              </div>
+            </nav>
+          </div>
+        </header>
+        <main>
+          <section class="h-hero">
+            <div class="wrapper">
+              <div class="h-hero__top">
+                <div class="h-hero__title">
+                  <h1>
+                    <span class="text-hidden">seiDris</span
+                    ><span>Web & App Developer</span>
+                  </h1>
+                </div>
+                <div class="h-hero__sub">
+                  <p>
+                    specialized in Web Development,Design and Mobile
+                    Applications.
+                  </p>
+                </div>
+              </div>
+              <div class="h-hero__bottom">
+                <div id="about" class="h-hero__text">
+                  <p>
+                    I'm helping startups and business owners to make a visual
+                    statement through spotless Web Design and Development so
+                    they can increase brand awareness and sell more.
+                  </p>
+                  <a href="" class="button">
+                    <span class="button__text">Contact Us</span>
+                    <div class="button__icon">
+                      <div class="button__icon__bg"></div>
+                      <svg
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                      >
+                        <path
+                          d="m7.012 18.069 9.702-9.702v7.298l1.499.028-.014-8.81-1.132-1.132-8.81-.014.028 1.499h7.298L5.88 16.937l1.131 1.132Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg></div
+                  ></a>
+                </div>
+                <ul class="h-hero__social">
+                  <li><span>Let's get connected</span></li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/seidris_/"
+                      target="_blank"
+                      class="text-link"
+                      ><span>Instagram</span></a
+                    >
+                  </li>
+                  <li><span>Dribbble, Linkedin. Comming Soon!</span></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="services">
+            <div class="wrapper">
+              <div class="services__header">
+                <h2>I can help you with ...</h2>
+              </div>
+              <div class="services__list">
+                <div class="services__item">
+                  <span>01</span>
+                  <h2>Design</h2>
+                  <p>
+                    I make web designs that engage your audience and create the
+                    user experience you want.
+                  </p>
+                </div>
+                <div class="services__item">
+                  <span>02</span>
+                  <h2>Development</h2>
+                  <p>
+                    Bringing visuals to life through developing highly
+                    functional web solutions.
+                  </p>
+                </div>
+                <div class="services__item">
+                  <span>03</span>
+                  <h2>The Full Package</h2>
+                  <p>
+                    Get the best of both worlds for your website, capture your
+                    brand identity and get fully functional features.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="process" class="process dropdown-section">
+            <div class="wrapper">
+              <div class="process__grid">
+                <div class="process__grid--col">
+                  <div class="process__title">
+                    <h2>My way of getting things done</h2>
+                  </div>
+                  <p>
+                    Fast and transparent, the path to owning a website that will
+                    represent your brand in the best of light is only 4 weeks
+                    away. Standing by the Waterfall methodology, I assure a step
+                    by step completion of the whole process.
+                  </p>
+                </div>
+                <div class="process__grid--col">
+                  <div class="process__list">
+                    <div class="dropdown">
+                      <div class="dropdown__header">
+                        <div class="dropdown__header__content">
+                          <span>01.</span>
+                          <h3>UX / Wireframing</h3>
+                        </div>
+                        <svg
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          class="dropdown__icon"
+                        >
+                          <path fill="currentColor" d="M0 8h16v1H0z"></path>
+                          <path fill="currentColor" d="M9 0v16H8V0z"></path>
+                        </svg>
+                      </div>
+                      <div class="dropdown__body">
+                        <div class="dropdown__body__content">
+                          <p>
+                            Here we map out the elements clearly, so you can see
+                            what elements will be built into the end-product,
+                            and have a better idea of the intended behavior
+                            end-users will have while using it.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="dropdown__divider"></div>
+                    </div>
+                    <div class="dropdown">
+                      <div class="dropdown__header">
+                        <div class="dropdown__header__content">
+                          <span>02.</span>
+                          <h3>Web Design</h3>
+                        </div>
+                        <svg
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          class="dropdown__icon"
+                        >
+                          <path fill="currentColor" d="M0 8h16v1H0z"></path>
+                          <path fill="currentColor" d="M9 0v16H8V0z"></path>
+                        </svg>
+                      </div>
+                      <div class="dropdown__body">
+                        <div class="dropdown__body__content">
+                          <p>
+                            Based on the previous step of building a prototype
+                            for your idea, I design the best solution you can
+                            have for your business’ image.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="dropdown__divider"></div>
+                    </div>
+                    <div class="dropdown">
+                      <div class="dropdown__header">
+                        <div class="dropdown__header__content">
+                          <span>03.</span>
+                          <h3>Web Development</h3>
+                        </div>
+                        <svg
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          class="dropdown__icon"
+                        >
+                          <path fill="currentColor" d="M0 8h16v1H0z"></path>
+                          <path fill="currentColor" d="M9 0v16H8V0z"></path>
+                        </svg>
+                      </div>
+                      <div class="dropdown__body">
+                        <div class="dropdown__body__content">
+                          <p>
+                            I build and test your new high-performance website,
+                            for every device. Using Webflow.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="dropdown__divider"></div>
+                    </div>
+                    <div class="dropdown">
+                      <div class="dropdown__header">
+                        <div class="dropdown__header__content">
+                          <span>04.</span>
+                          <h3>Analytics Setup / Support</h3>
+                        </div>
+                        <svg
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          class="dropdown__icon"
+                        >
+                          <path fill="currentColor" d="M0 8h16v1H0z"></path>
+                          <path fill="currentColor" d="M9 0v16H8V0z"></path>
+                        </svg>
+                      </div>
+                      <div class="dropdown__body">
+                        <div class="dropdown__body__content">
+                          <p>
+                            Settuping deep analytics to provide insights and
+                            meaningful data that can be used for your marketing
+                            purposes, as well as top-notch and timely
+                            maintenance so that you can focus on building your
+                            business.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="dropdown__divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="cta">
+            <div class="wrapper">
+              <div class="box cta__content">
+                <div class="cta__image">
+                  <img
+                    src="pics/Logo.svg"
+                    alt="Todor Dimov | Digital Designer"
+                  />
+                </div>
+                <h3>Let’s talk about a project, or an idea you may have</h3>
+              </div>
+              <div class="box wrap">
+                <form
+                  action="https://formsubmit.co/seidris22@gmail.com"
+                  class=""
+                >
+                  <!-- <h3 id="contact" class="text-3xl font-bold">Let's Connect</h3> -->
+                  <!-- <div class="cta__input-name"> -->
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your name"
+                    class=""
+                    required
+                  />
+                  <!-- <label for="name" class=""> Your Name </label> -->
+                  <!-- </div> -->
+                  <!-- <div class="cta__input-email"> -->
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Your email"
+                    class=""
+                    required
+                  />
+                  <!-- <label for="email" class=""> Your email </label> -->
+                  <!-- </div> -->
+                  <!-- <div class="cta__textarea"> -->
+                  <textarea
+                    name="content"
+                    id="content"
+                    cols="23"
+                    rows="5"
+                    placeholder="How can we help you?"
+                    class=""
+                  ></textarea>
+                  <!-- <label for="content" class="">How can we help you?</label> -->
+                  <!-- </div> -->
+                  <a href="" type="submit" class="button">
+                    <span class="button__text">Contact Us</span>
+                    <div class="button__icon">
+                      <div class="button__icon__bg"></div>
+                      <svg
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                      >
+                        <path
+                          d="m7.012 18.069 9.702-9.702v7.298l1.499.028-.014-8.81-1.132-1.132-8.81-.014.028 1.499h7.298L5.88 16.937l1.131 1.132Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg></div
+                  ></a>
+                </form>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="wrapper">
+            <div class="footer__grid">
+              <div class="footer__copy">
+                <span>© </span><span id="footerYear">2023</span
+                ><span>All Rights Reserved. Design &amp; Coded with ❤️️</span>
+              </div>
+              <ul class="footer__links">
+                <li>
+                  <a
+                    href="https://www.instagram.com/seidris_/"
+                    target="_blank"
+                    class="text-link"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="" target="_blank" class="text-link">Email</a>
+                </li>
+              </ul>
+              <a href="/" class="footer__back">Back to top ↑</a>
+            </div>
+          </div>
+        </footer>
       </div>
-    </section>
-    <section id="contact">
-      <div class="social-place">
-        <h1>Social Media</h1>
-        <p>You can find on</p>
-      </div>
-      <div class="social">
-        <div class="circle">
-          <div class="icon">
-            <a
-              rel="noopener"
-              aria-label="new"
-              href="https://www.facebook.com/SeiDris1/"
-              target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </div>
-          <span class="none"
-            ><a
-              rel="noopener"
-              aria-label="new"
-              href="https://www.facebook.com/SeiDris1/"
-              target="_blank"
-              >Facebook</a
-            ></span
-          >
-        </div>
-
-        <div class="circle">
-          <div class="icon">
-            <a
-              rel="noopener"
-              aria-label="new"
-              href="https://twitter.com/SaeedEdris"
-              target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </div>
-          <span class="none"
-            ><a
-              rel="noopener"
-              aria-label="new"
-              href="https://twitter.com/SaeedEdris"
-              target="_blank"
-              >Twitter</a
-            ></span
-          >
-        </div>
-
-        <div class="circle">
-          <div class="icon">
-            <a
-              rel="noopener"
-              aria-label="new"
-              href="https://www.instagram.com/seidris_/"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
-          <span class="none"
-            ><a
-              rel="noopener"
-              aria-label="new"
-              href="https://www.instagram.com/seidris_/"
-              target="_blank"
-              >Instagram</a
-            ></span
-          >
-        </div>
-
-        <div class="circle">
-          <div class="icon">
-            <a
-              rel="noopener"
-              aria-label="new"
-              href="https://github.com/Se-iDris"
-              target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </div>
-          <span class="none"
-            ><a
-              rel="noopener"
-              aria-label="new"
-              href="https://github.com/Se-iDris"
-              target="_blank"
-              >Github</a
-            ></span
-          >
-        </div>
-
-        <div class="circle">
-          <div class="icon">
-            <a
-              rel="noopener"
-              aria-label="new"
-              href="https://codepen.io/Se-iDris"
-              target="_blank"
-              ><i class="fab fa-codepen"></i
-            ></a>
-          </div>
-          <span class="none"
-            ><a
-              rel="noopener"
-              aria-label="new"
-              href="https://codepen.io/Se-iDris"
-              target="_blank"
-              >Codepen</a
-            ></span
-          >
-        </div>
-      </div>
-    </section>
-    <footer>
-      <p>Made with</p>
-      <div class="heared">
-        <svg
-          width="38"
-          height="41"
-          viewBox="0 0 38 41"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            id="pi heart"
-            d="M18.9342 4.09044C16.9236 1.66625 14.1965 0.304353 11.353 0.304353C8.50951 0.304353 5.78247 1.66625 3.77181 4.09044C1.76116 6.51464 0.631581 9.36721 0.63158 13.2309C0.63158 17.0945 1.76116 19.9471 3.77181 22.3713L18.9342 40.6522L34.0966 22.3713C36.1073 19.9471 37.2368 16.6592 37.2368 13.2309C37.2368 9.80255 36.1073 6.51464 34.0966 4.09044C32.0859 1.66625 29.3589 0.304352 26.5154 0.304352C23.6719 0.304352 20.9449 1.66625 18.9342 4.09044Z"
-            fill="#6290C3"
-          />
-        </svg>
-      </div>
-      <p>By SeiD iDriS</p>
-    </footer>
+    </div>
   </body>
 </html>
