@@ -646,14 +646,16 @@ h6 {
   bottom: 0;
   width: 100%;
   height: 1px;
-  background-color: rgba(17, 20, 20, 0.1);
+  background-color: #505467;
 }
 
-.dropdown.cc-open .dropdown__body__content {
+.dropdown.ccopen .dropdown__body, .dropdown__body__content {
   opacity: 1;
+  height: 115px;
+  transition: height 0.4s ease-in-out;
 }
 
-.dropdown.cc-open .dropdown__icon path:nth-of-type(2) {
+.dropdown.ccopen .dropdown__icon path:nth-of-type(2) {
   opacity: 0;
 }
 
@@ -1168,7 +1170,7 @@ cta .wrapper {
   content: "";
   width: 1px;
   height: 100%;
-  background-color: rgba(17, 20, 20, 0.1);
+  background-color: #505467;
   left: 0;
   top: 0;
   bottom: 0;
