@@ -1,3 +1,67 @@
+/* arimo-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/arimo-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* arimo-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/arimo-v28-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* arimo-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/arimo-v28-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* cinzel-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cinzel-v23-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/cinzel-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cinzel-v23-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/cinzel-v23-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('../fonts/cinzel-v23-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('../fonts/cinzel-v23-latin-regular.svg#Cinzel') format('svg'); /* Legacy iOS */
+}
+/* cinzel-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/cinzel-v23-latin-600.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/cinzel-v23-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cinzel-v23-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/cinzel-v23-latin-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('../fonts/cinzel-v23-latin-600.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('../fonts/cinzel-v23-latin-600.svg#Cinzel') format('svg'); /* Legacy iOS */
+}
+/* cinzel-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/cinzel-v23-latin-700.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/cinzel-v23-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cinzel-v23-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/cinzel-v23-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('../fonts/cinzel-v23-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('../fonts/cinzel-v23-latin-700.svg#Cinzel') format('svg'); /* Legacy iOS */
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -82,7 +146,8 @@ textarea {
 }
 
 .h-hero__title h1 {
-  font-size: 170px;
+  font-size: 145px;
+  font-family: "Cinzel", sans-serif;
 }
 
 .p-hero h1 {
@@ -298,7 +363,7 @@ h4,
 h5,
 h6,
 html {
-  font-family: "PP Mori", sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 summary {
@@ -697,11 +762,6 @@ header .nav span {
   justify-self: flex-start;
 }
 
-@media screen and (max-width: 767px) {
-  header .nav__logo {
-    display: none;
-  }
-}
 
 header .nav__links {
   display: flex;
@@ -718,11 +778,6 @@ header .nav__next {
   opacity: 0.4;
 }
 
-@media screen and (max-width: 374px) {
-  header .nav__next {
-    display: none;
-  }
-}
 
 .nav__theme {
   display: inline-flex;
@@ -836,7 +891,6 @@ header .nav__next {
 }
 
 .cta .wrapper .wrap form {
-  width: 90%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -844,20 +898,35 @@ header .nav__next {
   gap: 10px;
 }
 
-.cta .wrapper .wrap form textarea,
-input {
+.cta .wrapper .wrap form label{
+  text-align: start;
+  margin-top: 20px;
+  min-width: 345px;
+  font-size: 23px;
+}
+
+.cta .wrapper .wrap form input {
   outline: none;
-  max-width: 90%;
+  width: 100%;
   padding-inline: 15px;
   font-size: 25px;
-  background-color: #c0caf5;
-  color: #24283b;
+  background-color: transparent;
+  border: 3px solid #4a4e61;
+  color: wheat;
   height: 52px;
   border-radius: 10px;
 }
 
 .cta .wrapper .wrap form textarea {
   min-height: 200px;
+  font-size: 25px;
+  padding-inline: 15px;
+  background-color: transparent;
+  outline: none;
+  color: wheat;
+  border: 3px solid #4a4e61;
+  border-radius: 10px;
+  width: 100%;
 }
 
 @media screen and (max-width: 990px) {
@@ -880,7 +949,7 @@ input {
   }
   .cta .wrapper .wrap form {
     display: flex;
-    width: 100%;
+    min-width: 60%;
     justify-content: center;
     align-items: start;
     margin-top: 50px;
@@ -967,7 +1036,7 @@ cta .wrapper {
 .h-hero__top,
 .projects__header {
   grid-template-columns: 8fr 4fr;
-  grid-column-gap: 1.25em;
+  grid-column-gap: 1.10em;
 }
 
 @media screen and (max-width: 566px) {
@@ -1059,7 +1128,7 @@ cta .wrapper {
     flex-direction: column;
   }
   .h-hero__title h1 {
-    font-size: 20vw;
+    font-size: 15vw;
   }
 }
 
@@ -1177,6 +1246,7 @@ cta .wrapper {
 }
 
 .services__item span {
+  font-family: "Cinzel", sans-serif;
   display: block;
   margin-bottom: 80px;
   opacity: 0.1;
@@ -1203,6 +1273,7 @@ cta .wrapper {
 
 .services__item h2 {
   margin-bottom: 0.5em;
+  font-family: "Cinzel", sans-serif;
 }
 
 .services__item p {
@@ -1399,6 +1470,7 @@ cta .wrapper {
 .process__list .dropdown__header h3,
 .process__list .dropdown__header span {
   pointer-events: none;
+  font-family: "Cinzel", sans-serif;
 }
 
 .process__list .dropdown__header span {
